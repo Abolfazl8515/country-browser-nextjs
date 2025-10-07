@@ -1,3 +1,4 @@
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -70,7 +71,6 @@
 .dark {
   --background-app-rgb: rgb(20, 20, 20);
 
-  /* ✅ shadcn dark mode tokens */
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);

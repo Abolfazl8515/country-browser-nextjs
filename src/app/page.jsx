@@ -1,3 +1,9 @@
+import CardCountry from "@/components/CardCountry";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <CardCountry />
+    </div>
+  );
 }
