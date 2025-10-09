@@ -20,12 +20,12 @@ function DetailPage() {
         <Card className="w-11/12 flex justify-center items-center rounded-xl border border-secondary-400 bg-card text-card-foreground shadow-sm hover:shadow-lg">
           <CardHeader className="w-full flex items-center gap-4">
             <div>
-              <span className="w-40 h-40 rounded-full flex items-center justify-center bg-primary-600 text-secondary-50 text-6xl">
+              <span className="md:w-40 md:h-40 w-20 h-20 rounded-full flex items-center justify-center bg-primary-600 text-secondary-50 md:text-6xl text-3xl">
                 {country?.flag}
               </span>
             </div>
             <div>
-              <CardTitle className="text-4xl font-black">
+              <CardTitle className="md:text-4xl text-2xl font-black dark:text-secondary-50">
                 {country.name?.official}
               </CardTitle>
             </div>

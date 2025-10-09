@@ -20,7 +20,7 @@ function CardCountry({ flag, name, region, capital }) {
             </span>
           </div>
           <div>
-            <CardTitle className="text-lg">{name}</CardTitle>
+            <CardTitle className="text-lg dark:text-secondary-50">{name}</CardTitle>
           </div>
         </CardHeader>
         <CardContent className="space-y-3">
