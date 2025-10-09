@@ -1,5 +1,6 @@
 import FilterDropDown from "./FilterDropDown";
 import Search from "./Search";
+import ToggleDarkMode from "./ui/ToggleDarkMode";
 
 const option = [
   { label: "Africa", value: "africa" },
@@ -12,9 +13,12 @@ const option = [
 function Header() {
   return (
     <header className="w-4/5 mx-auto mt-10 flex justify-around items-center bg-primary-300 p-5 rounded-4xl gap-x-3">
-      <h1 className="w-1/3 font-black text-3xl text-secondary-600">
-        Country Browser
-      </h1>
+      <div className="w-1/3 flex gap-x-2 items-center">
+        <ToggleDarkMode />
+        <h1 className="font-black text-3xl text-secondary-600">
+          Country Browser
+        </h1>
+      </div>
       <div className="w-1/3">
         <Search />
       </div>

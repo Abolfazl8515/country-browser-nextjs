@@ -1,4 +1,5 @@
-import ReactQueryProvider from "@/providers/ReactQueryProvirder";
+import { DarkModeProvider } from "@/providers/DarkModeProvider";
+import ReactQueryProvider from "@/providers/ReactQueryProvider";
 import "@/styles/globals.css";
 
 export const metadata = {
@@ -10,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ReactQueryProvider>{children}</ReactQueryProvider>
+        <ReactQueryProvider>
+          <DarkModeProvider>{children}</DarkModeProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );
