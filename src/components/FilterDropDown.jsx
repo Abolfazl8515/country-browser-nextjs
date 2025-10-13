@@ -24,7 +24,7 @@ const FilterDropDown = ({ options, filterField }) => {
       onChange={changeHandler}
       className="textField__input bg-secondary-0 text-xs"
     >
-      <option key="all" value="all">
+      <option key="all" value="">
         All countries
       </option>
       {options.map((item) => (
