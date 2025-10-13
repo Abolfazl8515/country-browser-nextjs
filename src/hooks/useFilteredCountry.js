@@ -5,6 +5,7 @@ export default function useFilteredCountry(region) {
   const { data, isLoading: isLoadingFilter } = useQuery({
     queryKey: ["FilteredCountries", region],
     queryFn: () => getFilteredCountriesApi(region),
+    enabled: !!region,
   });
 
   const filteredCountries = data || [];
